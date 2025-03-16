@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: #6f4e37;
     --secondary-color: #fff7e6;
@@ -18,15 +17,17 @@ body {
     color: var(--text-color);
     background-color: var(--secondary-color);
     line-height: 1.6;
+    width: 100%;
 }
 
-.nivb{
+.nivb {
+    margin: 10px;
     position: sticky;
+    align-items: center;
     top: 0;
 }
 
-
-nav ul{
+nav ul {
     border: 1px solid #db8852;
     border-radius: 10px;
     width: 99%;
@@ -34,17 +35,18 @@ nav ul{
     margin-right: 1%;
     padding: 0;
     background-color: #fed9ba;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     list-style: none;
     display: grid;
     align-items: center;
-
 }
-.logo{
+
+.logo {
     grid-column: span 5;
 }
-.logo img{
+
+.logo img {
     margin: 0;
     padding: 0;
     width: 50px;
@@ -52,12 +54,13 @@ nav ul{
     border-radius: 50%;
 }
 
-.divicon{
+.divicon {
     grid-column: span 3;
     display: inline-flex;
     cursor: pointer;
 }
-.conted{
+
+.conted {
     position: relative;
     width: 70px;
     height: 70px;
@@ -73,10 +76,11 @@ nav ul{
     flex-direction: column;
     margin: 0 20px;
     z-index: 2;
-    transition: all 0.3s cubic-bezier(0.68,-0.55,0.266,1.55);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.266, 1.55);
     cursor: pointer;
 }
-.conted span{
+
+.conted span {
     position: relative;
     width: 50px;
     height: 50px;
@@ -87,17 +91,20 @@ nav ul{
     z-index: 2;
     cursor: pointer;
 }
-.conted span iframe{
+
+.conted span iframe {
     cursor: pointer;
     font-size: 30px;
     line-height: 50px;
 }
-.conted:hover{
+
+.conted:hover {
     transform: scale(1.5);
 }
-.conted .home1{
+
+.conted .home1 {
     position: absolute;
-    padding: 10px 20px;
+    padding: 10% 20%;
     border-radius: 25px;
     background-color: #fed9ba;
     color: #fed9ba;
@@ -105,17 +112,18 @@ nav ul{
     margin-left: 10px;
     z-index: 2;
     top: 0;
-    opacity: ();
+    opacity: 0;
     pointer-events: none;
-    transition: all 0.5s cubic-bezier(0.68,-0.55,0.266,1.55);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.266, 1.55);
 }
-.conted:hover .home1{
+
+.conted:hover .home1 {
     top: 60px;
     opacity: 1;
-    pointer-events: AUTO;
-
+    pointer-events: auto;
 }
-.conted .home1::before{
+
+.conted .home1::before {
     content: "";
     position: absolute;
     width: 15px;
@@ -123,13 +131,15 @@ nav ul{
     bottom: -8px;
     left: 45%;
     transform: translateX(-45%) rotate(45deg);
-    background: auto
+    background: auto;
 }
+
 .conted:hover span,
 .conted:hover .home1,
-.conted:hover .home1::before{
+.conted:hover .home1::before {
     background-color: #db8852;
 }
+
 .content {
     padding: 2rem;
 }
@@ -189,25 +199,29 @@ nav ul{
     color: var(--secondary-color);
 }
 
-
 .product img {
     max-width: 100%;
     height: 150px;
     border-radius: 10px;
 }
-.product:hover{
+
+.product:hover {
     color: #333;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
-.div2{
+
+.div2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
-.div2 .map{
+
+.div2 .map {
     margin-top: 32px;
     grid-column: span 1;
     margin-right: 3px;
 }
+
 .feedback {
     grid-column: span 1;
     background-color: var(--secondary-color);
@@ -227,17 +241,20 @@ nav ul{
     font-weight: bold;
 }
 
-.feedback input, .feedback textarea {
+.feedback input,
+.feedback textarea {
     padding: 0.5rem;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
 }
-textarea{
+
+textarea {
     max-height: 50px;
-    min-height: 25px;
-    max-width: 700px;
-    min-width: 400px;
+    min-height: 50px;
+    max-width: 80%;
+    min-width: 80%;
 }
+
 .feedback button {
     padding: 0.7rem;
     background-color: var(--primary-color);
@@ -268,4 +285,16 @@ textarea{
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .div2 {
+        grid-template-columns: 1fr;
+    }
+    .div2 .map,
+    .feedback {
+        grid-column: span 1;
+        margin-right: 0;
+    }
 }
