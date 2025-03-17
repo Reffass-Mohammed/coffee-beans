@@ -39,12 +39,7 @@
 @media (max-width: 768px) {
   body {
     width: 100%;
-    margin: 0;
-  }
-  .container {
-    width: 100%;
-    margin: 0;
-    display: inline-block;
+    overflow-x: hidden;
   }
   .info-section {
     flex-direction: column;
@@ -139,8 +134,8 @@
   }
 
   textarea {
-    max-height: 20px;
-    min-height: 20px;
+    max-height: 40px;
+    min-height: 40px;
     max-width: 80%;
     min-width: 80%;
   }
@@ -158,6 +153,9 @@
 }
 
 @media (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+  }
   .info-text h1 {
     font-size: 1.2rem;
   }

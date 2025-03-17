@@ -18,6 +18,7 @@ body {
     background-color: var(--secondary-color);
     line-height: 1.6;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .nivb {
@@ -74,7 +75,7 @@ nav ul {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0 auto;
     z-index: 2;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.266, 1.55);
     cursor: pointer;
