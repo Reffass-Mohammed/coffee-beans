@@ -37,7 +37,7 @@
 }
 
 @media (max-width: 768px) {
-  body {
+  html , body {
     width: 100%;
     overflow-x: hidden;
   }
@@ -153,9 +153,13 @@
 }
 
 @media (max-width: 480px) {
-  body{
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     overflow-x: hidden;
   }
+
   .info-text h1 {
     font-size: 1.2rem;
   }
@@ -181,4 +185,11 @@
     grid-column: span 1;
     justify-content: center;
   }
+  .content, .info-section, .products, .selection {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+  }
+
 }
