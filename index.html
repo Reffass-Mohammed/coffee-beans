@@ -1,119 +1,750 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="image\OIP.jpeg" type="logo">
-    <link rel="stylesheet" href="style/stylee.css">
-    <link rel="stylesheet" href="style/style.css"><!-- /*style media querres*/ -->
-    <title>CofeReffass</title>
-</head>
-<body>
-    <Div class="nivb">
-        <nav>
-            <ul>
-                <li class="logo"><img src="image/OIP.jpeg" alt="logo"></li>
-                <div class="divicon">
-                    <li class="conted">
-                        <div class="home1"> home</div>
-                        <span><iframe src="icone/home_31dp_52311F.svg" frameborder="0" class="icon"></iframe></span>
-                    </li>
-                    <li class="conted">
-                        <div class="home1">service</div>
-                        <span><iframe src="icone/shopping_cart_24dp_52311F.svg" frameborder="0" class="icon"></iframe></span>
-                    </li>
-                    <li class="conted">
-                        <div class="home1">login</div>
-                        <span><iframe src="icone/login_24dp_52311F.svg" frameborder="0" class="icon"></iframe></span>
-                    </li>
-                    <li class="conted">
-                        <div class="home1">about</div>
-                        <span><iframe src="icone/help_24dp_52311F.svg" frameborder="0" class="icon"></iframe></span>
-                    </li>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CoffeeReffass - Premium Coffee Shop with the finest selection of coffee beans and beverages in Morocco." />
+    <link rel="shortcut icon" href="image/OIP.jpeg" type="image/jpeg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>CoffeeReffass - Premium Coffee Experience</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="coffee-cup">
+        <div class="coffee"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+
+    <!-- Header with Navbar -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand logo" href="#">
+            <img
+              src="image/OIP.jpeg"
+              alt="CoffeeReffass Logo"
+              height="40"
+              class="d-inline-block align-top" />
+            <span>CoffeeReffass</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">
+                  <i class="bi bi-house-door nav-icon"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">
+                  <i class="bi bi-cup-hot nav-icon"></i>
+                  <span>Products</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  <i class="bi bi-info-circle nav-icon"></i>
+                  <span>About</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  <i class="bi bi-envelope nav-icon"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-login" href="#login">
+                  <i class="bi bi-box-arrow-in-right nav-icon"></i>
+                  <span>Login</span>
+                </a>
+              </li>
+              <li class="nav-item cart-icon">
+                <a class="nav-link" href="#cart">
+                  <i class="bi bi-cart nav-icon"></i>
+                  <span class="cart-count">0</span>
+                </a>
+              </li>
             </ul>
-        </nav>
-    </Div>
-    <main class="content">
-        <section class="selection">
-            <label for="juice">Choose a Juice:</label>
-            <select id="juice" name="juice">
-                <option value="Juice">Juice</option>
-                <option value="Juice1">Juice1</option>
-                <option value="Juice2">Juice2</option>
-            </select>
-
-            <label for="coffee">Choose a Coffee:</label>
-            <select id="coffee" name="coffee">
-                <option value="Coffee">Coffee</option>
-                <option value="Coffee1">Coffee1</option>
-                <option value="Coffee2">Coffee2</option>
-            </select>
-        </section>
-
-        <section id="home" class="info-section">
-            <img src="image/OIP1.jpeg" alt="Coffee" class="info-image">
-            <div class="info-text">
-                <h3>Information</h3>
-                <p>
-                    Coffee beans are one of the most important agricultural crops in the world, grown mainly in tropical regions. 
-                    They are not just the base for delicious beverages that brighten mornings but also a source of numerous health benefits.
-                    Coffee beans contain antioxidants and caffeine, which help improve focus and increase energy levels.
-                </p>
-            </div>
-        </section>
-
-        <section id="services" class="products">
-            <div class="product">
-                <img src="image/oip2.jpg" alt="Lavazza Coffee Beans" class="product-image">
-                <p>Name: Lavazza (Coffee Beans)</p>
-                <p>Price: 1100 DH</p>
-            </div>
-            <div class="product">
-                <img src="image/oip3.jpg" alt="Lavazza Crema e Gusto" class="product-image">
-                <p>Name: Lavazza (Crema e Gusto)</p>
-                <p>Price: 250 DH</p>
-            </div>
-            <div class="product">
-                <img src="image/oip4.jpg" alt="Lavazza Paulista Beans" class="product-image">
-                <p>Name: Lavazza (Grain Paulista)</p>
-                <p>Price: 250 DH</p>
-            </div>
-            <div class="product">
-                <img src="image/oip5.jpg" alt="Lavazza Qualita Rossa" class="product-image">
-                <p>Name: Lavazza (Qualita Rossa)</p>
-                <p>Price: 120 DH</p>
-            </div>
-        </section>
-        <div class="div2">
-            <section id="map" class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d585.4198888911998!2d-5.563423264094449!3d33.8990533836883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda05b2b7bb03ac9%3A0x38b9f611f780f44c!2sOFPPT%20bab%20tizimi%2C%20Mekn%C3%A8s!5e0!3m2!1sar!2sma!4v1735061989703!5m2!1sar!2sma" 
-                    width="100%" height="93%" style="border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-
-            <section id="feedback" class="feedback">
-                <h4>Share Your Feedback</h4>
-                <form>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name">
-
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name">
-
-                    <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comments"></textarea>
-
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
+          </div>
         </div>
-        <footer class="footer">
-            <p>&copy; 2024 CoffeeReffass</p>
-            <a href="#">WhatsApp</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-        </footer>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-title">
+              Experience Premium Coffee Like Never Before
+            </h1>
+            <p class="hero-text">
+              Discover our selection of handpicked coffee beans from around the
+              world. Enjoy the rich aroma and exceptional taste that makes every
+              cup special.
+            </p>
+            <div class="hero-buttons">
+              <a href="#products" class="btn btn-primary">Shop Now</a>
+              <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img
+                src="image/OIP1.jpeg"
+                alt="Premium Coffee Experience"
+                class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Featured Categories -->
+      <section class="categories-section">
+        <div class="container">
+          <h2 class="section-title">Shop By Category</h2>
+          <div class="categories-grid">
+            <div class="category-card" data-category="beans">
+              <div class="category-icon">
+                <i class="bi bi-basket"></i>
+              </div>
+              <h3>Coffee Beans</h3>
+              <p>Premium whole beans</p>
+            </div>
+            <div class="category-card" data-category="ground">
+              <div class="category-icon">
+                <i class="bi bi-cup"></i>
+              </div>
+              <h3>Ground Coffee</h3>
+              <p>Ready to brew</p>
+            </div>
+            <div class="category-card" data-category="drinks">
+              <div class="category-icon">
+                <i class="bi bi-cup-hot"></i>
+              </div>
+              <h3>Cold Brews</h3>
+              <p>Refreshing drinks</p>
+            </div>
+            <div class="category-card" data-category="accessories">
+              <div class="category-icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3>Accessories</h3>
+              <p>Tools & equipment</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Coffee Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img
+                src="image/OIP1.jpeg"
+                alt="Coffee Story"
+                class="about-image img-fluid" />
+            </div>
+            <div class="col-lg-6">
+              <div class="about-content">
+                <h2 class="section-title">Our Coffee Story</h2>
+                <p class="about-text">
+                  Coffee beans are one of the most important agricultural crops
+                  in the world, grown mainly in tropical regions. At
+                  CoffeeReffass, we carefully select the finest beans from
+                  sustainable farms around the globe.
+                </p>
+                <p class="about-text">
+                  Our beans are not just the base for delicious beverages that
+                  brighten mornings but also a source of numerous health
+                  benefits. Coffee beans contain antioxidants and caffeine,
+                  which help improve focus and increase energy levels.
+                </p>
+                <div class="coffee-facts">
+                  <div class="fact">
+                    <i class="bi bi-award"></i>
+                    <h4>Premium Quality</h4>
+                    <p>Top-grade beans</p>
+                  </div>
+                  <div class="fact">
+                    <i class="bi bi-globe"></i>
+                    <h4>Ethically Sourced</h4>
+                    <p>Sustainable farming</p>
+                  </div>
+                  <div class="fact">
+                    <i class="bi bi-heart"></i>
+                    <h4>Health Benefits</h4>
+                    <p>Rich in antioxidants</p>
+                  </div>
+                </div>
+                <button class="cta-button">Discover Our Process</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section id="products" class="products-section">
+        <div class="container">
+          <h2 class="section-title">Our Premium Selection</h2>
+          <p class="section-subtitle">
+            Experience the finest coffee products, handpicked for true coffee
+            lovers
+          </p>
+
+          <div class="products-grid">
+            <div class="product-card" data-product-id="1">
+              <div class="product-badge bestseller">Bestseller</div>
+              <div class="product-image">
+                <img src="image/oip2.jpg" alt="Lavazza Premium Beans" />
+                <div class="product-actions">
+                  <button class="add-to-cart">
+                    <i class="bi bi-cart-plus"></i>
+                  </button>
+                  <button class="quick-view"><i class="bi bi-eye"></i></button>
+                  <button class="add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="product-info"
+                data-name="Lavazza Premium Beans"
+                data-price="1100 DH"
+                data-rating="4.5"
+                data-reviews="124"
+                data-description="Premium Italian coffee beans with a rich, balanced flavor profile. These beans are carefully selected from the finest coffee-growing regions and roasted to perfection."
+                data-origin="Italy"
+                data-roast="Medium-Dark"
+                data-weight="1kg"
+                data-sku="LAV1001"
+                data-categories="Coffee Beans, Premium Selection">
+                <h3 class="product-title">Lavazza Premium Beans</h3>
+                <div class="product-rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span>(124)</span>
+                </div>
+                <p class="product-description">
+                  Premium Italian coffee beans with a rich, balanced flavor
+                </p>
+                <div class="product-price">
+                  <span class="price">1100 DH</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-product-id="2">
+              <div class="product-badge sale">15% Off</div>
+              <div class="product-image">
+                <img src="image/oip3.jpg" alt="Lavazza Crema e Gusto" />
+                <div class="product-actions">
+                  <button class="add-to-cart">
+                    <i class="bi bi-cart-plus"></i>
+                  </button>
+                  <button class="quick-view"><i class="bi bi-eye"></i></button>
+                  <button class="add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="product-info"
+                data-name="Lavazza Crema e Gusto"
+                data-price="250 DH"
+                data-rating="4.0"
+                data-reviews="98"
+                data-description="Full-bodied dark roast with chocolate undertones"
+                data-origin="Italy"
+                data-roast="Dark"
+                data-weight="500g"
+                data-sku="LAV1002"
+                data-categories="Ground Coffee, Popular">
+                <h3 class="product-title">Lavazza Crema e Gusto</h3>
+                <div class="product-rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span>(98)</span>
+                </div>
+                <p class="product-description">
+                  Full-bodied dark roast with chocolate undertones
+                </p>
+                <div class="product-price">
+                  <span class="price">250 DH</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-product-id="3">
+              <div class="product-badge premium">Limited</div>
+              <div class="product-image">
+                <img src="image/oip4.jpg" alt="Lavazza Gold Selection" />
+                <div class="product-actions">
+                  <button class="add-to-cart">
+                    <i class="bi bi-cart-plus"></i>
+                  </button>
+                  <button class="quick-view"><i class="bi bi-eye"></i></button>
+                  <button class="add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="product-info"
+                data-name="Lavazza Gold Selection"
+                data-price="350 DH"
+                data-rating="4.8"
+                data-reviews="156"
+                data-description="Premium blend featuring carefully selected Arabica beans with hints of caramel and dark chocolate. Perfect for espresso lovers seeking a luxurious coffee experience."
+                data-origin="Brazil, Colombia"
+                data-roast="Medium"
+                data-weight="750g"
+                data-sku="LAV1003"
+                data-categories="Premium Coffee, Limited Edition">
+                <h3 class="product-title">Lavazza Gold Selection</h3>
+                <div class="product-rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(156)</span>
+                </div>
+                <p class="product-description">
+                  Premium blend with caramel and chocolate notes
+                </p>
+                <div class="product-price">
+                  <span class="price">350 DH</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-product-id="4">
+              <div class="product-badge new">New</div>
+              <div class="product-image">
+                <img src="image/oip5.jpg" alt="Lavazza Qualita Rossa" />
+                <div class="product-actions">
+                  <button class="add-to-cart">
+                    <i class="bi bi-cart-plus"></i>
+                  </button>
+                  <button class="quick-view"><i class="bi bi-eye"></i></button>
+                  <button class="add-to-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="product-info"
+                data-name="Lavazza Qualita Rossa"
+                data-price="120 DH"
+                data-rating="3.0"
+                data-reviews="42"
+                data-description="Classic Italian blend with a rich aroma and smooth taste. Perfect for everyday coffee lovers who appreciate traditional Italian coffee."
+                data-origin="Italy"
+                data-roast="Medium"
+                data-weight="250g"
+                data-sku="LAV1004"
+                data-categories="Ground Coffee, Classic Blends">
+                <h3 class="product-title">Lavazza Qualita Rossa</h3>
+                <div class="product-rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <span>(42)</span>
+                </div>
+                <p class="product-description">
+                  Classic Italian blend with rich aroma
+                </p>
+                <div class="product-price">
+                  <span class="price">120 DH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a href="#all-products" class="btn btn-outline-primary"
+              >View All Products</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section">
+        <div class="container">
+          <h2 class="section-title">What Our Customers Say</h2>
+          <div class="testimonials-slider">
+            <div class="testimonial">
+              <div class="testimonial-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "The Lavazza beans from CoffeeReffass are exceptional. The aroma
+                fills my kitchen every morning and the taste is unmatched.
+                Highly recommended!"
+              </p>
+              <div class="testimonial-author">
+                <img
+                  src="image/S.jpg"
+                  alt="Customer"
+                  class="testimonial-avatar" />
+                <div class="testimonial-info">
+                  <h4>Sarah L.</h4>
+                  <p>Coffee Enthusiast</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p class="testimonial-text">
+                "Fast delivery and excellent customer service. The Qualita Rossa
+                has become my daily brew. Thank you for bringing such quality
+                products to Morocco!"
+              </p>
+              <div class="testimonial-author">
+                <img
+                  src="image/A.jpg"
+                  alt="Customer"
+                  class="testimonial-avatar" />
+                <div class="testimonial-info">
+                  <h4>Ahmed M.</h4>
+                  <p>Loyal Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location & Contact -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="map-container">
+                <h2 class="section-title">Find Us</h2>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d585.4198888911998!2d-5.563423264094449!3d33.8990533836883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda05b2b7bb03ac9%3A0x38b9f611f780f44c!2sOFPPT%20bab%20tizimi%2C%20Mekn%C3%A8s!5e0!3m2!1sar!2sma!4v1735061989703!5m2!1sar!2sma"
+                  allowfullscreen=""
+                  loading="lazy"
+                  class="store-map"></iframe>
+                <div class="store-info">
+                  <div class="info-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                      <h4>Address</h4>
+                      <p>OFPPT bab tizimi, Meknès, Morocco</p>
+                    </div>
+                  </div>
+                  <div class="info-item">
+                    <i class="bi bi-clock"></i>
+                    <div>
+                      <h4>Hours</h4>
+                      <p>Monday-Friday: 8am - 8pm<br />Weekend: 9am - 6pm</p>
+                    </div>
+                  </div>
+                  <div class="info-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                      <h4>Call Us</h4>
+                      <p>+212 612-34567890</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="contact-form-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form id="contactForm" class="contact-form">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="Your full name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="Your email address" />
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                      <option value="">Select a subject</option>
+                      <option value="inquiry">Product Inquiry</option>
+                      <option value="feedback">Feedback</option>
+                      <option value="support">Customer Support</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      placeholder="Your message..."></textarea>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      id="newsletter"
+                      name="newsletter"
+                      class="form-check-input" />
+                    <label for="newsletter" class="form-check-label"
+                      >Subscribe to our newsletter</label
+                    >
+                  </div>
+                  <button type="submit" class="submit-button">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-container">
+            <div class="newsletter-content">
+              <i class="bi bi-envelope-paper"></i>
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>
+                Get updates on new products, special offers, and coffee tips
+                straight to your inbox.
+              </p>
+            </div>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    
-</body>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <img
+                src="image/OIP.jpeg"
+                alt="CoffeeReffass Logo"
+                class="footer-logo" />
+              <h3>CoffeeReffass</h3>
+              <p>
+                Bringing the finest coffee experience to your daily life since
+                2020. Our mission is to deliver premium quality coffee products
+                with exceptional service.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h4>Our Products</h4>
+              <ul>
+                <li><a href="#">Coffee Beans</a></li>
+                <li><a href="#">Ground Coffee</a></li>
+                <li><a href="#">Coffee Makers</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Gift Sets</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                <i class="bi bi-geo-alt"></i> OFPPT bab tizimi, Meknès, Morocco
+              </p>
+              <p><i class="bi bi-phone"></i> +212 612-34567890</p>
+              <p><i class="bi bi-envelope"></i> info@coffeereffass.com</p>
+              <p><i class="bi bi-clock"></i> Mon-Fri: 8am - 8pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                &copy; <span id="currentYear"></span> CoffeeReffass. All Rights
+                Reserved.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Quick View Modal -->
+    <div
+      class="modal fade"
+      id="quickViewModal"
+      tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="image/oip2.jpg"
+                  alt="Product"
+                  class="img-fluid product-modal-image" />
+              </div>
+              <div class="col-md-6">
+                <div class="product-modal-info">
+                  <h3>Lavazza Premium Beans</h3>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span>(124 reviews)</span>
+                  </div>
+                  <div class="product-price">
+                    <span class="price">1100 DH</span>
+                  </div>
+                  <div class="product-description">
+                    <p>
+                      Premium Italian coffee beans with a rich, balanced flavor
+                      profile. These beans are carefully selected from the
+                      finest coffee-growing regions and roasted to perfection.
+                    </p>
+                  </div>
+                  <div class="product-meta">
+                    <p><strong>Origin:</strong> Italy</p>
+                    <p><strong>Roast:</strong> Medium-Dark</p>
+                    <p><strong>Weight:</strong> 1kg</p>
+                    <p><strong>SKU:</strong> LAV1001</p>
+                    <p>
+                      <strong>Categories:</strong> Coffee Beans, Premium
+                      Selection
+                    </p>
+                  </div>
+                  <div class="product-quantity">
+                    <label>Quantity:</label>
+                    <div class="quantity-selector">
+                      <button class="quantity-btn minus">-</button>
+                      <input type="number" value="1" min="1" max="10" />
+                      <button class="quantity-btn plus">+</button>
+                    </div>
+                  </div>
+                  <div class="product-actions-modal">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-outline-secondary">
+                      Add to Wishlist
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
 </html>
